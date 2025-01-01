@@ -7,7 +7,7 @@ index d547c37bf50..9b2b3f504b2 100644
  	}
  
 -	return isLinux && product.quality === 'stable' ? TitlebarStyle.NATIVE : TitlebarStyle.CUSTOM; // default to custom on all OS except Linux stable (for now)
-+	return isLinux ? TitlebarStyle.CUSTOM : TitlebarStyle.NATIVE; // default to custom on all OS except Linux stable (for now)
++	return isLinux && product.quality === 'stable' ? TitlebarStyle.CUSTOM : TitlebarStyle.CUSTOM;
  }
  
  export const DEFAULT_CUSTOM_TITLEBAR_HEIGHT = 35; // includes space for command center
